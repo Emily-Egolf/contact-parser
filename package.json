@@ -1,0 +1,23 @@
+{
+  "name": "contact-parser",
+  "version": "1.0.0",
+  "description": "parses contacts from SMS for sms communication",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "contact",
+    "parser"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {},
+  "dependencies": {
+    "electron": "^11.0.1",
+    "electron-reload": "^1.5.0",
+    "material-design-icons": "^3.0.1",
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}

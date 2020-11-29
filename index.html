@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <title>Contact Parser</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Parser</h1>
+
+      <div class="row">
+        <div class="input-field col s8">
+          <input id="report" type="text">
+          <label for="report">Report File</label>
+        </div>
+        <div class="col s3"><a id="file-btn" class="btn file-select">
+            browse</a></div>
+        <div class="input-field col s8">
+          <input id="output-folder" type="text">
+          <label for="output-folder">Output Folder</label>
+        </div>
+        <div class="col s3"><a id="directory-btn" class="btn file-select">
+            browse</a></div>
+      </div>
+      <button id="run-parser" class="btn waves-effect run-parser">Run</button>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./js/materialize.min.js"></script>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
